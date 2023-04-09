@@ -1,0 +1,1065 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Serif JP", sans-serif;
+}
+body {
+    display: flex;
+    flex-flow: column;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: auto;
+}
+main {
+    flex: 1;
+}
+.header-items {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+.header-logo {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+.header-logo img {
+    width: 200px;
+    height: auto;
+    border: black;
+}
+.header-titles {
+    width: calc(100% - 30%);
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header-serch {
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.header-serch form {
+    width: 100%;
+}
+.header-serch i {
+    position: absolute;
+    left: 1.2rem;
+    top: 1.3rem;
+}
+
+input[type="serch"] {
+    width: 90%;
+    height: 40px;
+    border: 1px solid black;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+.header-nav {
+    width: 50%;
+    color: white;
+    display: flex;
+    list-style: none;
+}
+.header-nav li {
+    width: 120px;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+    color: black;
+}
+.header-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.serch-result-box {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    text-align: center;
+}
+.serch-result-box h1 {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+
+main {
+    width: 100vw;
+    height: auto;
+    margin-top: 50px;
+    padding-bottom: 100px;
+}
+
+.login-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.login-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.login-icon span {
+    font-size: small;
+    color: red;
+}
+.login-post-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.login-post-area span {
+    font-size: small;
+    color: red;
+}
+.login-button-area {
+    width: 100%;
+    text-align: center;
+}
+
+.login-button-area button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.login-button-area button:hover {
+    background: darkgray;
+}
+
+.forgot-password {
+    text-align: end;
+    padding-right: 55px;
+    margin-top: 10px;
+}
+.sign-up {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.signup-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signup-icon span {
+    color: red;
+}
+.signup-post-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.signup-post-area span {
+    font-size: small;
+    color: red;
+}
+.signup-button-area button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.signup-button-area {
+    width: 100%;
+    text-align: center;
+}
+.signup-button-area button:hover {
+    background: darkgray;
+}
+
+.register-box {
+    width: calc(100% - 30%);
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.register-text {
+    text-align: center;
+}
+
+.password-reset-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.password-reset-icon {
+    text-align: center;
+}
+.password-reset-icon span {
+    font-size: small;
+    color: red;
+}
+.password-reset-area span {
+    font-size: small;
+    color: red;
+}
+.password-reset-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.email-send-button {
+    width: 100%;
+    text-align: center;
+}
+.email-send-button button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+.send-complete-box {
+    width: 400px;
+    height: 20vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.send-coplete-text {
+    text-align: center;
+}
+
+.password-edit-form {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.password-edit-icon {
+    text-align: center;
+}
+.password-edit-icon span {
+    font-size: small;
+    color: red;
+}
+.password-edit-area {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.password-edit-area span {
+    font-size: small;
+    color: red;
+}
+.password-update-button {
+    width: 100%;
+    text-align: center;
+}
+.password-update-button button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+
+.password-complete-box {
+    width: 500px;
+    height: 20vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.password-bomplete-text {
+    text-align: center;
+}
+
+.new-upload-box {
+    width: 100%;
+}
+.new-upload-box a {
+    color: black;
+    text-decoration: none;
+}
+.new-upload-box h1 {
+    text-align: center;
+}
+.new-upload-area {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+}
+
+.new-upload-area ul {
+    display: flex;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+    cursor: grabbing;
+}
+.new-upload-area ul::-webkit-scrollbar {
+    display: none;
+}
+.new-upload-area li {
+    width: 200px;
+    list-style: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    border: solid gray;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+.music-box img {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.music-name {
+    overflow: hidden;
+    white-space: nowrap;
+}
+.music_user-name {
+    color: gray;
+    font-size: small;
+}
+.music-time-like {
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-size: small;
+}
+.likes {
+    cursor: grab;
+}
+.liked {
+    color: #e45653;
+}
+.like-counter {
+    font-size: 5px;
+}
+
+.ranking-upload-box {
+    width: 100%;
+}
+.ranking-upload-box h1 {
+    text-align: center;
+}
+.ranking-upload-area {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.ranking-upload-area ul {
+    display: flex;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-x: scroll;
+}
+.ranking-upload-area ul::-webkit-scrollbar {
+    display: none;
+}
+.ranking-upload-area ul:active {
+    cursor: grabbing;
+}
+.ranking-upload-area li {
+    width: 200px;
+    list-style: none;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 10px;
+    border: solid gray;
+    box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+.show-user {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+.show-user button {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 1px solid black;
+    background-color: transparent;
+    border: none;
+}
+.user-image {
+    width: 100%;
+}
+.profile table {
+    width: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+.profile th {
+    width: 5em;
+}
+.profile td {
+    width: 5em;
+    white-space: pre;
+}
+.user-image img {
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.playlist-items {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    border: 1px solid black;
+}
+.playlist-items img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.playlist-items h1 {
+    font-size: medium;
+}
+.playlist-items h3 {
+    font-size: small;
+}
+.list-group-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.music-player {
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    border: 1px solid black;
+}
+.music-player-items {
+    width: calc(100% - 30%);
+    display: flex;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+    font-size: x-large;
+}
+.music-player-buttn {
+    display: flex;
+}
+.play {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.pause {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.music-player-info {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.music-player-info h1 {
+    font-size: medium;
+    text-align: left;
+}
+.music-player-info h3 {
+    font-size: xx-small;
+}
+
+.music-player-info img {
+    display: none;
+}
+.music-player-time {
+    font-size: medium;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.music-player-wave {
+    width: 80%;
+}
+.volume-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 5%;
+    margin-left: 5px;
+}
+
+.volume-button i {
+    color: gray;
+    font-size: small;
+}
+.volume {
+    appearance: none;
+    position: absolute;
+    right: 100%;
+    background: linear-gradient(
+        to right,
+        gray 0%,
+        gray 50%,
+        #fff 50%,
+        #fff 100%
+    );
+    border: solid 2px gray;
+    border-radius: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 100px;
+    height: 7px;
+}
+.volume::-webkit-slider-thumb {
+    z-index: 5;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: ew-resize;
+    background: #434343;
+}
+
+.user-edit-box {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 100px;
+}
+.user-edit-image {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: -100px;
+}
+.user-edit-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    top: -100px;
+    margin: 0 auto;
+}
+.user-edit-image-button {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+.user-edit-item {
+    padding-top: 120px;
+}
+.user-edit-area {
+    width: 80%;
+    margin: 0 auto;
+}
+.user-edit-area span {
+    font-size: small;
+    color: red;
+}
+.user-edit-button {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user-edit-button button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    margin-top: 10px;
+    appearance: none;
+    border: 0;
+    border-radius: 50px;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    width: 100px;
+    height: 50px;
+}
+.useredit-complete-box {
+    width: calc(100% - 30%);
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.useredit-complete-text {
+    text-align: center;
+}
+.music-detail-waveform {
+    width: calc(100% - 30%);
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.music-detail-background img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    filter: grayscale(100%);
+    opacity: 0.2;
+    object-fit: cover;
+}
+.music-detail-waveitems {
+    width: 100%;
+    height: 300px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.music-detail-link {
+    width: 100%;
+    padding-left: 10px;
+    align-items: center;
+}
+.music-detail-link a {
+    cursor: default;
+}
+
+.music-detail-image img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.music-detail-form {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    display: flex;
+}
+.musicplaypause-button {
+    display: flex;
+    align-items: center;
+}
+.musicplaypause-button span {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    padding: 0;
+    appearance: none;
+    font-size: 25px;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: solid 3px black;
+}
+.musicplaypause-button i {
+    color: black;
+    font-size: 25px;
+}
+.music-detail-user {
+    width: 20%;
+    height: auto;
+    text-align: center;
+    word-wrap: break-word;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.music-detail-user img {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    align-items: center;
+    object-fit: cover;
+}
+.music-detail-username {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.music-detail-username a {
+    color: black;
+    text-decoration: none;
+}
+.no-comment {
+    color: gray;
+}
+.music-detail-comment {
+    width: 80%;
+    height: 100%;
+    padding: 30px;
+    margin: 1px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.music-comment {
+    height: 250px;
+}
+.music-comment p {
+    padding-left: 10px;
+}
+.user-comment-title {
+    display: flex;
+    align-items: baseline;
+}
+.user-comment-title span {
+    color: red;
+    margin-left: 10px;
+    font-size: x-small;
+}
+.comment {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.comment-left {
+    margin-right: 1%;
+}
+.comment-right {
+    width: 73%;
+}
+.replay-button {
+    position: absolute;
+    width: 20%;
+    right: 0;
+    bottom: 0;
+    color: gray;
+    font-size: small;
+    text-align: end;
+}
+.comment-input-area textarea {
+    resize: none;
+    outline: none;
+    height: 25px;
+    width: 100%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.comment-input-button {
+    width: 100%;
+    display: block;
+    margin: 0 0 0 auto;
+}
+.comment-input-area button {
+    background-color: transparent;
+    border-radius: 0.4em;
+    outline: none;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+}
+.comment {
+    margin-top: 20px;
+}
+.comment-body-user {
+    font-weight: bold;
+    position: relative;
+}
+.comment-body-time {
+    position: absolute;
+    font-size: xx-small;
+    color: gray;
+    margin-left: 10px;
+    bottom: 0;
+}
+.replay-input-area textarea {
+    resize: none;
+    outline: none;
+    height: 25px;
+    width: 93%;
+    margin-left: 7%;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+.replay-button {
+    width: 100%;
+    display: block;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+.replay-select-button {
+    display: flex;
+    float: right;
+}
+.replay-input-area button {
+    background-color: transparent;
+    border-radius: 0.4em;
+    outline: none;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.comment-replay {
+    width: 93%;
+    margin-left: 7%;
+    margin-top: 20px;
+    display: flex;
+}
+.comment-replay img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.music-post-box {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+.music-post-box h1 {
+    text-align: center;
+}
+.music-post-box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.center {
+    display: flex;
+}
+.left {
+    width: 50%;
+    text-align: center;
+}
+#preview {
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 0px 3px black;
+    border-radius: 20px;
+}
+.right {
+    padding-right: 10px;
+    width: 50%;
+}
+.post-area {
+    margin-top: 20px;
+}
+.post-area i {
+    margin-left: 2px;
+    margin-right: 5px;
+}
+.post-area span {
+    font-size: small;
+    color: red;
+}
+.file-name {
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.confirm-area {
+    margin-top: 20px;
+}
+input[type="text"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+input[type="file"] {
+    display: none;
+}
+input[type="password"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+input[type="email"] {
+    width: 100%;
+    height: 50px;
+    font-size: large;
+}
+label {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: 1px solid black;
+}
+label:hover {
+    background-color: #f9fafb;
+}
+label:focus {
+    outline: 2px solid rgba(0, 0, 0, 0.1);
+    outline-offset: 2px;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    font-size: large;
+    letter-spacing: 1px;
+}
+.button-area {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.button-area button {
+    width: 200px;
+    height: 80px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.music-confirm-box {
+    width: calc(100% - 30%);
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow-wrap: break-word;
+}
+.music-confirm-box h1 {
+    text-align: center;
+}
+.music-confirm-box p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.music-confirm-area audio {
+    border: 1px solid #555;
+    background: #eee;
+}
+.button-area-back {
+    text-align: center;
+    margin-top: 30px;
+}
+.send {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+.back {
+    width: 100px;
+    height: 40px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.9375em;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.music-complete-box {
+    width: calc(100% - 30%);
+    height: 50vh;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.music-complete-text {
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    background-color: #efefef;
+    text-align: center;
+    font-weight: lighter;
+}
+.footer-nav {
+    bottom: 0px;
+}
