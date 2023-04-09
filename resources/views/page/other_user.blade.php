@@ -59,6 +59,10 @@
         <div class="music-player-wave">
             <div class="waveform"></div>
         </div>
+        <div class="volume-button">
+            <i class="fa-solid fa-volume-high"></i>
+            <input type="range" class="volume" min="0" max="1" value="0.5" step="0.1" orient="vertical" style="display:none">
+        </div>
     </div>
 </div>
 @endsection
